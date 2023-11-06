@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Actions from "./Actions";
 import Filter from "./Filter";
 import './Footer.css';
-import { TodoContext } from "../Context/TodoContext";
+import { TodoContext } from "../Context/TodoProvider";
 
 const Footer = () => {
   const {remaining} = useContext(TodoContext);

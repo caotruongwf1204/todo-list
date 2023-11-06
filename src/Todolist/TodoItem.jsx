@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Button from "../All/Button";
 import "./Item.css";
-import { TodoContext } from "../Context/TodoContext";
+import { TodoContext } from "../Context/TodoProvider";
 
 const TodoItem = ({ todo }) => {
   const { onDelete, onMark } = useContext(TodoContext);
