@@ -13,12 +13,13 @@ const Form = () => {
       setContent("");
     }
   };
+
   return (
     <form className="form" onSubmit={handleSubmit}>
       <input
         className="title"
         type="text"
-        placeholder="what do you want to do?"
+        placeholder="What do you want to do?"
         value={content}
         onChange={(e) => setContent(e.target.value)}
       />

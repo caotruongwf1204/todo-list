@@ -1,10 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 import TodoItem from "./TodoItem";
 import "./List.css";
-import { TodoContext } from "../Context/TodoProvider";
 
-const TodoList = () => {
- const { todos } = useContext(TodoContext);
+const TodoList = ({ todos }) => {
+  
   return (
     <div className="todo-list">
       {todos.map((item) => (

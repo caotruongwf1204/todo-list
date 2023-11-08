@@ -45,11 +45,11 @@ export default function TodoProvider({children}) {
 
   // lọc theo status
   let filterTodos =
-    state.filter.status === "all"
+    state.filter.completed === "all"
       ? state.todos
-      : state.filter.status === "completed"
-      ? state.todos.filter((todo) => todo.status)
-      : state.todos.filter((todo) => !todo.status);
+      : state.filter.completed === "completed"
+      ? state.todos.filter((todo) => todo.completed)
+      : state.todos.filter((todo) => !todo.completed);
 
   // lọc tiếp theo màu
   filterTodos =

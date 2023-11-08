@@ -11,10 +11,10 @@ const TodoItem = ({ todo }) => {
         <input
           className="status"
           type="checkbox"
-          checked={todo.status}
+          checked={todo.completed}
           onChange={() => onMark(todo.id)}
         />
-        <span className="content">{todo.content}</span>
+        <span className="content">{todo.todo}</span>
       </div>
       <div className="todo-actions">
         <div className="color-picker">Pick color</div>
