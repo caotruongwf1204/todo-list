@@ -6,14 +6,15 @@ const Form = () => {
   const { onSubmit } = useContext(TodoContext);
   const [content, setContent] = useState("");
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (content.trim() !== "") {
       onSubmit(content);
       setContent("");
+      console.log(content);
     }
   };
-
   return (
     <form className="form" onSubmit={handleSubmit}>
       <input

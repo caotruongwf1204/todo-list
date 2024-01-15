@@ -14,7 +14,7 @@ const TodoItem = ({ todo }) => {
           checked={todo.completed}
           onChange={() => onMark(todo.id)}
         />
-        <span className="content">{todo.todo}</span>
+        <span className="content">{todo.content}</span>
       </div>
       <div className="todo-actions">
         <div className="color-picker">Pick color</div>
